@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "Sahip",
+  "description": "Sahibinden.com \u00fczerindeki ilanlar\u0131n fiyat ge\u00e7mi\u015fini g\u00f6r\u00fcnt\u00fcleyebilmenizi sa\u011flar.",
+  "version": "0.6.8",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "declarativeNetRequestWithHostAccess",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://gecmisi.com.tr/*",
+    "https://*.shbdn.com/*",
+    "https://www.sahibinden.com/*",
+    "*://*.sahibinden.com/*"
+  ],
+  "icons": {
+    "256": "icons/icon-256.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "256": "icons/icon-256.png"
+    },
+    "default_title": "Sahibinden Fiyat Ge\u00e7mi\u015fi",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://www.sahibinden.com/*"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "js": [
+        "damageContent.js"
+      ],
+      "matches": [
+        "https://www.sahibinden.com/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fiyatgecmisi@gmail.com"
+    }
+  }
+}

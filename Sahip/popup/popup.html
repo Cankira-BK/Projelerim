@@ -1,0 +1,210 @@
+<!-- chembros -->
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiyat Geçmişi</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0px;
+        width: 360px;
+        background-color: #f5f5f5;
+        padding: 40px;
+        border-radius: 0px;
+        box-shadow: inset 0px 0px 14px 4px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      h3 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      p {
+        /* margin-bottom: 15px; */
+        color: #555;
+      }
+      a {
+        color: #2196f3;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #feedbackForm {
+        margin-top: 20px;
+      }
+      textarea {
+        width: 70%;
+        /* margin-bottom: 10px; */
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        /* float: right; */
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .logo-container {
+        text-align: right;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+      }
+      .logo-container img {
+        margin-right: 10px;
+      }
+      #version-container {
+        display: flex;
+        justify-content: flex-end;
+        margin: -10px;
+        opacity: 0.3;
+      }
+      .icon {
+        width: 32px;
+        height: 32px;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      .divider {
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .toggle-switch {
+        position: relative;
+        display: inline-block;
+        min-width: 60px;
+        height: 34px;
+      }
+      .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 34px;
+      }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: rgb(255, 255, 255);
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+      input:checked + .slider {
+        background-color: #2196f3;
+      }
+      input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+      /* Center the label with the switch */
+      .label-container {
+        display: flex;
+        align-items: center;
+      }
+      .label-container label {
+        margin-left: 10px;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="version-container">
+      <div id="version-info"></div>
+    </div>
+    <h2>sahibinden fiyat geçmişi eklentisi</h2>
+
+    <!-- <div class="divider"></div> -->
+    <div id="content_api_message"></div>
+
+    <!-- <div class="divider"></div>
+    <div id="feedbackForm">
+      <form id="feedbackFormElement" action="#" method="post" style="display: flex; flex-wrap: nowrap; justify-content: space-around; flex-direction: row">
+        <textarea id="feedbackMessage" placeholder="Önerilerilerinizi bekliyoruz." rows="3"></textarea>
+        <button id="submitButton" type="button">Gönder</button>
+      </form>
+    </div> -->
+
+    <!-- <div class="divider"></div> -->
+    <!-- <div style="display: flex; justify-content: center">
+      <button id="triggerButton" type="button" >Nasıl Kullanılır</button>
+    </div> -->
+    <!-- <div class="divider"></div>
+    <a href=" https://www.sahibinden.com/otomobil" target="_blank">Otomobil</a>
+
+    <a href=" https://www.sahibinden.com/emlak" target="_blank">Emlak</a>
+ -->
+
+    <!--     
+    <a href="https://api.whatsapp.com/send?text=Sahibinden Fiyat Geçmişi Eklentisi: https://chromewebstore.google.com/detail/eilpnlhignocnlfognmnogdjdcpnolbd" target="_blank">WhatsApp ile paylaş</a>
+    <br>
+    <a href="https://twitter.com/intent/tweet?text=Sahibinden Fiyat Geçmişi Eklentisi: https://chromewebstore.google.com/detail/eilpnlhignocnlfognmnogdjdcpnolbd"  target="_blank">Twitter ile paylaş</a>
+    -->
+    <div class="divider"></div>
+
+    <div class="label-container">
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggleHistoryChange" />
+        <span class="slider"></span>
+      </label>
+      <label for="toggleHistoryChange">Fiyat Değişimini Göster</label>
+    </div>
+
+    <!-- <div class="divider"></div>
+    <p ></p>
+    <div class="label-container">
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggleHistory" />
+        <span class="slider"></span>
+      </label>
+      <label for="toggleHistory">Fiyat Geçmişini Göster  (Mouse ile fiyatın üzerine gelince)</label>
+    </div> -->
+
+    <div class="divider"></div>
+    <div class="label-container">
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggleFiyatM2Change" />
+        <span class="slider"></span>
+      </label>
+      <label for="toggleFiyatM2Change">Fiyat/m² Sütununu Göster (Beta)</label>
+    </div>
+    
+
+    <div class="divider"></div>
+    <div style="display: flex; justify-content: center">
+      <h3>fiyatgecmisi@gmail.com</h3>
+    </div>
+
+    <div class="divider"></div>
+    <div id="logos" style="display: flex; justify-content: center">
+      <a href="https://chromewebstore.google.com/detail/eilpnlhignocnlfognmnogdjdcpnolbd" target="_blank"><img src="icons/chrome.svg" class="icon" alt="Google Chrome" /></a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/sfg/" target="_blank"><img src="icons/firefox.svg" class="icon" alt="Firefox" /></a>
+      <a href="https://chromewebstore.google.com/detail/eilpnlhignocnlfognmnogdjdcpnolbd" target="_blank"><img src="icons/edge.svg" class="icon" alt="Microsoft Edge" /></a>
+      <a href="https://chromewebstore.google.com/detail/eilpnlhignocnlfognmnogdjdcpnolbd" target="_blank"><img src="icons/opera.svg" class="icon" alt="Opera" /></a>
+      <a href="https://chromewebstore.google.com/detail/eilpnlhignocnlfognmnogdjdcpnolbd" target="_blank"><img src="icons/brave.svg" class="icon" alt="Brave" /></a>
+      <a href="https://chromewebstore.google.com/detail/eilpnlhignocnlfognmnogdjdcpnolbd" target="_blank"><img src="icons/arc.svg" class="icon" alt="Arc" /></a>
+    </div>
+  </body>
+</html>
