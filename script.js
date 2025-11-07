@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Backend servisine istek gönder.
             // Bu adresin, backend sunucunuzun çalıştığı adrese eşit olduğundan emin olun.
-            const response = await fetch(`http://api.degisimi.com/get-price?ilanNo=${ilanNo}`);
+            const response = await fetch(`https://api.degisimi.com/get-price?ilanNo=${ilanNo}`);
             const data = await response.json();
 
             if (response.ok) {
