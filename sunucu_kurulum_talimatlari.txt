@@ -1,0 +1,86 @@
+# Ubuntu 22.04 üzerinde Nginx Reverse Proxy ve Let's Encrypt SSL Kurulumu
+# Domain: api.degisimi.com
+# Hedef: localhost:3000 (Node.js uygulamanız)
+
+# --- ÖN HAZIRLIK ---
+# 1. DNS Kaydı: api.degisimi.com alan adınızın A kaydının, Ubuntu sunucunuzun IP adresini (`203.202.202.210`) gösterdiğinden emin olun. Bu işlem genellikle 5-10 dakika sürer.
+# 2. Node.js Uygulamanız: Node.js uygulamanızın (server.js) `pm2` gibi bir process manager ile veya en azından `node server.js &` komutuyla arka planda çalıştığından ve `localhost:3000` portunu dinlediğinden emin olun.
+
+# --- ADIM 1: Gerekli Paketlerin Kurulumu (Nginx ve Certbot) ---
+
+# Paket listesini güncelleyin
+sudo apt update
+
+# Nginx web sunucusunu kurun
+sudo apt install nginx -y
+
+# Certbot'u (Let's Encrypt için) ve Nginx eklentisini kurun
+sudo apt install certbot python3-certbot-nginx -y
+
+# --- ADIM 2: Güvenlik Duvarı (Firewall) Ayarları ---
+
+# Nginx'in tam profiline (HTTP ve HTTPS) izin verin
+sudo ufw allow 'Nginx Full'
+
+# (Eğer daha önce eklediyseniz) 3000 portuna dışarıdan direkt erişimi kapatmak daha güvenlidir, çünkü artık tüm trafik Nginx üzerinden geçecek.
+# Bu adımı atlayabilir veya sonra yapabilirsiniz.
+# sudo ufw deny 3000/tcp
+
+# Güvenlik duvarını yeniden yükleyin
+sudo ufw reload
+
+# --- ADIM 3: Nginx'i Reverse Proxy Olarak Ayarlama ---
+
+# Nginx için yeni bir konfigürasyon dosyası oluşturun
+sudo nano /etc/nginx/sites-available/api.degisimi.com
+
+# Açılan editörün içine aşağıdaki konfigürasyonu kopyalayıp yapıştırın.
+# DİKKAT: `server_name` kısmının doğru olduğundan emin olun.
+
+server {
+    listen 80;
+    server_name api.degisimi.com;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+# Dosyayı kaydetmek için: Ctrl+X, ardından Y tuşuna basın ve Enter'a basın.
+
+# --- ADIM 4: Nginx Konfigürasyonunu Aktif Etme ---
+
+# Oluşturduğunuz konfigürasyon dosyasını `sites-enabled` dizinine sembolik bir link ile bağlayın.
+sudo ln -s /etc/nginx/sites-available/api.degisimi.com /etc/nginx/sites-enabled/
+
+# Nginx konfigürasyonunuzda bir hata olup olmadığını test edin.
+sudo nginx -t
+
+# Çıktı olarak "syntax is ok" ve "test is successful" görmelisiniz. Hata varsa, bir önceki adımdaki dosyayı kontrol edin.
+
+# Nginx'i yeniden başlatarak yeni konfigürasyonu uygulayın.
+sudo systemctl restart nginx
+
+# --- ADIM 5: SSL Sertifikası Alma ve Otomatik HTTPS Yönlendirmesi ---
+
+# Certbot'u çalıştırarak Let's Encrypt'ten SSL sertifikası alın.
+# Certbot, Nginx konfigürasyonunuzu otomatik olarak bulacak ve HTTPS için güncelleyecektir.
+sudo certbot --nginx -d api.degisimi.com
+
+# Kurulum sırasında size bazı sorular soracaktır:
+# 1. E-posta adresinizi girmeniz istenecek (Sertifika yenileme bildirimleri için).
+# 2. Hizmet şartlarını kabul etmeniz istenecek (A yazıp Enter'a basın).
+# 3. E-posta adresinizi EFF ile paylaşmak isteyip istemediğiniz sorulacak (Y veya N yazabilirsiniz).
+# 4. En önemlisi, HTTP trafiğini HTTPS'e yönlendirmek isteyip istemediğiniz sorulacak. **2. seçeneği (Redirect)** seçin. Bu, tüm `http://` isteklerinin otomatik olarak `https://`'e yönlendirilmesini sağlar.
+
+# Kurulum başarıyla tamamlandığında, sertifikanızın konumu ve son kullanma tarihi hakkında bir mesaj göreceksiniz.
+# Certbot, sertifika yenileme işlemini de otomatik olarak ayarlayacaktır.
+
+# --- BİTTİ! ---
+# Artık `https://api.degisimi.com` adresine yapılan istekler Nginx tarafından karşılanıp güvenli bir şekilde `localhost:3000`'deki Node.js uygulamanıza yönlendirilecektir.
+# `degisimi.com` sitenizdeki frontend, "Mixed Content" hatası olmadan backend ile iletişim kurabilmelidir.
