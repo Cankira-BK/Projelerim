@@ -1,0 +1,1 @@
+<?php    use Controller\IN_Controller;    class Crone extends IN_Controller    {        public function __construct()        {            parent::__construct();        }        public function start()        {            $this->model->start();        }        public function end()        {            $this->model->end();        }    }

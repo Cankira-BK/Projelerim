@@ -1,0 +1,180 @@
+.warfg_account #ucp_avatar, .warfg_account #ucp_avatar img, .warfg_account #ucp_avatar div {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: all 500ms;
+    -o-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+}
+
+.warfg_account #ucp_avatar {
+    margin: 15px 30px 0 24px; /* 15px 19px 0 24px */
+    z-index: 999;
+    position: relative;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D7962B #DFC68A #DFC68A #D7962B;
+    transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+}
+
+.warfg_account #ucp_avatar:hover {
+    border-color: #DFC68A #DFC68A #D7962B #D7962B;
+    transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+}
+
+#ucp_info aside {
+    margin: 0 !important;
+}
+
+#ucp_info td {
+    font-size: 11px;
+}
+
+#warfg_ucp_buttons {
+    width: 660px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 9px 15px 9px;
+}
+
+#accoun_panel_menu li {
+    width: 322px;
+    height: 90px;
+    float: left;
+    margin: 0 15px 15px 0;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-position: -818px -5px;
+}
+
+#accoun_panel_menu li:before {
+    width: 322px;
+    height: 90px;
+    content: "";
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    transition: visibility 0s linear 0.8s,opacity 0.5s linear;
+    -moz-transition: visibility 0s linear 0.8s,opacity 0.5s linear;
+    -webkit-transition: visibility 0s linear 0.8s,opacity 0.5s linear;
+    -o-transition: visibility 0s linear 0.8s,opacity 0.5s linear;
+    background-position: -818px -125px;
+}
+
+#accoun_panel_menu li:hover:before {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+}
+
+#accoun_panel_menu li:nth-child(2n) {
+    float: right;
+    margin: 0 0 15px 0;
+}
+
+#accoun_panel_menu li:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+#accoun_panel_menu li * {
+    z-index: 99;
+    position: relative;
+}
+
+#accoun_panel_menu li a {
+    width: 305px;
+    height: 75px;
+    padding: 7px;
+    display: block;
+}
+
+#accoun_panel_menu li .icon_holder {
+    width: 73px;
+    height: 73px;
+    float: left;
+    margin: 2px 0 0 1px;
+    background-position: -818px -247px;
+}
+
+#accoun_panel_menu li .icon {
+    width: 53px;
+    height: 53px;
+    margin: 7px 0 0 8px;
+    display: inline-block;
+    border: 2px #2b2724 solid;
+    position: absolute;
+    box-shadow: inset 0 0 10px 1px #1e1916;
+    -moz-box-shadow: inset 0 0 10px 1px #1e1916;
+    -webkit-box-shadow: inset 0 0 10px 1px #1e1916;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    transition: all 400ms;
+    -o-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#accoun_panel_menu li:hover .icon {
+    box-shadow: inset 0 0 10px 1px #1e1916, 0 0 0 1px #b3a796;
+    -moz-box-shadow: inset 0 0 10px 1px #1e1916, 0 0 0 1px #b3a796;
+    -webkit-box-shadow: inset 0 0 10px 1px #1e1916, 0 0 0 1px #b3a796;
+}
+
+#accoun_panel_menu li a span {
+    color: #847465;
+    margin: 14px 0 0 10px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    transition: all 400ms;
+    -o-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+}
+
+#accoun_panel_menu li:hover a span {
+    color: #ac9a88;
+}
+
+#accoun_panel_menu li a p {
+    color: #c6af93;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    transition: all 400ms;
+    -o-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+}
+
+#accoun_panel_menu li:hover a p {
+    color: #e5d5c0;
+}

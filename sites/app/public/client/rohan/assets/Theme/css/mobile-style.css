@@ -1,0 +1,199 @@
+@media (min-width: 1201px) {
+    html {
+        overflow-x: hidden;
+    }
+    .mobile-btn {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    img {
+        max-width: 100%;
+    }
+    .sparks, .leaves {
+        display: none;
+    }
+    .wrapper_web {
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .header_web {
+        height: auto;
+        padding: 30px 0px;
+        text-align: center;
+    }
+    .logo {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    .container_web {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content {
+        width: 100%;
+        order: 1;
+    }
+    .sidebar {
+        width: 50%;
+    }
+    .download, .serverBlock {
+        margin: 0 auto;
+    }
+    .soc-block {
+        width: 100%;
+        background-size: cover;
+        margin-left: 0px;
+    }
+    .soc-block a {
+        width: 50%;
+    }
+    .swiper-slider {
+        background-size: cover;
+    }
+    .swiper-carousel .swiper-slide img {
+        margin: 0 auto;
+    }
+    .prev {
+        margin-bottom: 10px;
+    }
+    .toTopBlock {
+        background: url(../images/footer-line.png) center no-repeat;
+    }
+    .footer {
+        height: auto;
+        padding: 10px 0px;
+    }
+    .footer-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-info > div {
+        width: auto;
+        margin: 15px;
+    }
+    .at {
+        padding-left: 0px;
+        color: #d8b49f;
+    }
+    .footer-menu {
+        flex-wrap: wrap;
+    }
+    .footer-menu li {
+        margin-bottom: 10px;
+    }
+    .fbBlock {
+        text-align: center;
+    }
+    .mobile-btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 999;
+        transition: 0.3s;
+    }
+    .mobile-btn.active {
+        left: 270px;
+        top: 20px;
+    }
+    .mobile-btn span {
+        display: block;
+        height: 6px;
+        width: 30px;
+        background: #98281c;
+        border-radius: 4px;
+        margin-bottom: 3px;
+        transition: 0.3s;
+    }
+    .mobile-btn.active span {
+        height: 4px;
+    }
+    .mobile-btn.active span:nth-child(1) {
+        transform: rotate(45deg);
+        margin-bottom: -4px;
+    }
+    .mobile-btn.active span:nth-child(2) {
+        display: none;
+    }
+    .mobile-btn.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    .topMenu-wrapper {
+        width: auto;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .topMenu {
+        width: 320px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1) !important;
+        padding: 50px;
+        transition: 0.3s;
+        left: -320px;
+    }
+    .topMenu.active {
+        left: 0px;
+    }
+    .topMenu ul {
+        display: block;
+    }
+    .topMenu ul li a {
+        height: auto;
+        line-height: 1;
+        padding: 17px 0px;
+    }
+    .topMenu ul li a:after {
+        display: none;
+    }
+}
+@media (max-width: 690px) {
+    .sidebar {
+        width: 100%;
+    }
+    .top-block .top-name {
+        width: 70%;
+    }
+    .top-block .top-event-name {
+        width: 80%;
+    }
+    .topNewsBlock {
+        display: block;
+        text-align: center;
+    }
+    .topNewsInfo {
+        padding-top: 25px;
+        padding-left: 0px;
+    }
+    .footer-menu li a {
+        margin: 0px 3px;
+    }
+}
+@media (max-width: 575px) {
+    .swiper-slider .swiper-slide .slider-info p {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .swiper-slider .swiper-slide .slider-info {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .swiper-slider .swiper-slide .slider-info .button-small {
+        margin: 0 auto;
+    }
+    table tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    table tr td, table tr th {
+        width: 50% !important;
+    }
+}
+@media (max-width: 370px) {
+    .download, .serverBlock {
+        margin-left: -25px;
+    }
+    table tr td, table tr th {
+        width: 100% !important;
+    }
+}

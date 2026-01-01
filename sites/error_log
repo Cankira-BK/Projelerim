@@ -1,0 +1,36 @@
+[27-Aug-2025 09:11:13 Europe/Istanbul] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/nuyacom/public_html/app/views/admin/master.php on line 257
+[27-Aug-2025 09:15:44 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/nuyacom/public_html/app/views/admin/master.php:2
+Stack trace:
+#0 /home/nuyacom/public_html/debug.php(7): include()
+#1 {main}
+  thrown in /home/nuyacom/public_html/app/views/admin/master.php on line 2
+[27-Aug-2025 11:40:51 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/nuyacom/public_html/app/views/admin/master.php:2
+Stack trace:
+#0 /home/nuyacom/public_html/debug.php(7): include()
+#1 {main}
+  thrown in /home/nuyacom/public_html/app/views/admin/master.php on line 2
+[09-Sep-2025 11:49:14 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/nuyacom/public_html/app/views/admin/master.php:2
+Stack trace:
+#0 /home/nuyacom/public_html/debug.php(7): include()
+#1 {main}
+  thrown in /home/nuyacom/public_html/app/views/admin/master.php on line 2
+[24-Oct-2025 21:44:11 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/nuyacom/public_html/app/views/admin/master.php:2
+Stack trace:
+#0 /home/nuyacom/public_html/debug.php(7): include()
+#1 {main}
+  thrown in /home/nuyacom/public_html/app/views/admin/master.php on line 2
+[18-Nov-2025 15:28:44 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/nuyacom/public_html/app/views/admin/master.php:2
+Stack trace:
+#0 /home/nuyacom/public_html/debug.php(7): include()
+#1 {main}
+  thrown in /home/nuyacom/public_html/app/views/admin/master.php on line 2
+[18-Nov-2025 15:28:58 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/nuyacom/public_html/app/views/admin/master.php:2
+Stack trace:
+#0 /home/nuyacom/public_html/debug.php(7): include()
+#1 {main}
+  thrown in /home/nuyacom/public_html/app/views/admin/master.php on line 2
+[18-Nov-2025 15:29:34 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/nuyacom/public_html/app/views/admin/master.php:2
+Stack trace:
+#0 /home/nuyacom/public_html/debug.php(7): include()
+#1 {main}
+  thrown in /home/nuyacom/public_html/app/views/admin/master.php on line 2

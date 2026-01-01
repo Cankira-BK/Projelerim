@@ -1,0 +1,21 @@
+			<tr>
+		<td>Toplam Online</td>
+		<td style="text-align:right;"><span class="label label-success">0</span></td>
+	</tr>
+			<tr>
+		<td>Bugün Girenler</td>
+		<td style="text-align:right;"><span class="label label-success">0</span></td>
+	</tr>
+		        <tr>
+            <td>Toplam Hesap</td>
+            <td style="text-align:right;"><span class="label label-success">4</span></td>
+        </tr>
+			<tr>
+		<td>Toplam Karakter</td>
+		<td style="text-align:right;"><span class="label label-success">29</span></td>
+	</tr>
+			<tr>
+		<td>Aktif Pazar</td>
+		<td style="text-align:right;"><span class="label label-success">0</span></td>
+	</tr>
+			

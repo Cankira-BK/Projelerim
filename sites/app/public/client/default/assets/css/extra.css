@@ -1,0 +1,16 @@
+.discord-widget {
+    width:320px;
+    transition-property: right;
+    transition-duration: 2s;
+    -webkit-transition-property: right; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    z-index:10;
+}
+
+.discord-widget.active
+{
+    right: 20px;
+}

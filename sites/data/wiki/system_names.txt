@@ -1,0 +1,31 @@
+﻿#	Name
+1	K Envanteri
+2	Kostüm Bonus Aktarımı
+3	Boss Dedektörü
+4	Çevrimdışı Pazar
+5	Efsun Botu
+6	Gelişmiş Oyun Seçenekleri
+7	Grup Kutsama Sistemi
+8	Güçlü Binek Sistemi
+9	Hızlı Biyolog
+10	Işınlanma Tahtası
+11	Kostüm Parlama Sistemi
+12	Ticaret & Pazar Kayıtları
+13	Lonca Ajan Sistemi
+14	Lonca Savaş İstatistiği
+15	Mobdan Düşen Eşyalar Sistemi
+16	Otomatik Av Sistemi
+17	Pazar Dekorasyon Sistemi
+18	Sandık Aynası Sistemi
+19	Sistem Seçenekleri
+20	Ticaret Camı
+21	Uzak Market Sistemi
+22	Yansıtma Sistemi
+23	Youtuber Sistemi
+24	Yardımcı Şaman Sistemi
+25	Yeni Offical Duygular
+26	Başlangıç Eşyaları
+27	Satıcı Marketi 1
+28	Satıcı Marketi 2
+29	Silahcı & Zırhcı
+30	Beta Zırh Silah Dönüşümü

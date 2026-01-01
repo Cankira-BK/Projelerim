@@ -1,0 +1,411 @@
+    /* ui */
+    @media (min-width: 1200px) {
+
+        .pd-l-0 {
+            padding-left: 0;
+        }
+    }
+
+    @media (min-width: 1015px) and (max-width: 1200px) {
+        .top {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .top .container {
+            padding: 0;
+            max-width: 992px;
+        }
+    }
+
+    @media (min-width: 1015px) {
+        body {
+            background: url(../images/footer.jpg) no-repeat #0b0706;
+            background-position: bottom;
+        }
+        .f-d-n{
+            display: none;
+            overflow: hidden;
+        }
+    }
+
+    @media (max-width: 1015px) {
+        body {
+            background-color: #0a0602;
+        }
+
+        .m-d-n {
+            display: none;
+            overflow: hidden;
+        }
+
+        .top {
+            margin-bottom: 3rem !important;
+        }
+        
+        /* content bottom */
+        .bottom {
+            height: 100px;
+            padding-top:30px;
+            text-align: center;            
+        }
+        .bottom h5{
+            color:#668235;
+        }
+        .bottom span{
+            font-size:14px;
+            color:#668235;
+        }
+        .bottom span a{
+            font-weight: bold;
+            color:#668235;
+        }
+         /* top menu */
+        .top .homepage,
+        .top .register,
+        .top .download {
+            text-decoration: none;
+            height: 141px;
+            width: 325px;
+            padding-top: 72px;
+            display: block;
+            text-align: center;
+        }
+
+        .top .homepage strong,
+        .top .register strong,
+        .top .download strong {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffd4bf;
+            text-shadow: 0 1px #451500;
+            transition: 1s linear;
+            display: block;
+            font-weight: 750;
+        }
+
+        .top .homepage strong:hover,
+        .top .register strong:hover,
+        .top .download strong:hover {
+            color: #e3ef9b;
+        }
+
+        .top .homepage span,
+        .top .register span,
+        .top .download span {
+            font-size: 12px;
+            color: #ff9153;
+            font-weight: 500;
+            margin-top: -5px;
+            display: block;
+        }
+
+        .top .homepage {
+            background: url('../images/homepage.png');
+        }
+
+        .top .register {
+            background: url('../images/register.png');
+        }
+
+        .top .download {
+            background: url('../images/download.png');
+        }
+
+    }
+
+    @media (min-width: 1015px) {
+
+        /* content top 
+        */
+        .top {
+            background: url('../images/top.jpg') no-repeat top center #000000;
+            height: 456px;
+            padding-top: 271px;
+        }
+
+        /* top menu */
+        .top .homepage,
+        .top .register,
+        .top .download {
+            text-decoration: none;
+            height: 141px;
+            width: 325px;
+            padding-top: 70px;
+            display: block;
+            text-align: center;
+        }
+
+        .top .homepage strong,
+        .top .register strong,
+        .top .download strong {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #fffcfb;
+            text-shadow: 0 1px #451500;
+            transition: 1s linear;
+            display: block;
+            font-weight: 750;
+        }
+
+        .top .homepage strong:hover,
+        .top .register strong:hover,
+        .top .download strong:hover {
+            color: #e3ef9b;
+        }
+
+        .top .homepage span,
+        .top .register span,
+        .top .download span {
+            font-size: 12px;
+            color: #3a2117;
+            font-weight: 500;
+            margin-top: -5px;
+            display: block;
+        }
+
+        .top .homepage {
+            background: url('../images/homepage.png');
+        }
+
+        .top .register {
+            background: url('../images/register.png');
+        }
+
+        .top .download {
+            background: url('../images/download.png');
+        }
+
+        /* content center */
+        .center {
+            background: url('../images/background.png') repeat-y top center;
+        }
+
+        /* content bottom */
+        .bottom {
+            height: 241px;
+            padding-top:120px;
+            text-align: center;            
+        }
+        .bottom h5{
+            color:#a74b1d;
+        }
+        .bottom span{
+            font-size:14px;
+            color:#a74b1d;
+        }
+        .bottom span a{
+            font-weight: bold;
+            color:#a74b1d;
+        }
+    }
+	
+	.logo {
+		z-index: 2;
+		position: absolute;
+		top: -100px;
+		left: -10px;
+	}
+	
+	@media screen and (max-width: 600px) {
+	  .nomobile {
+		visibility: hidden;
+		clear: both;
+		float: right;
+		margin: 5px auto;
+		width: 22%;
+		height: auto;
+		display: none;
+	  }
+	}
+
+    /* card */
+
+    .card {
+        background-color: #2b1a12;
+    }
+
+    .card-header {
+        background: linear-gradient(to top, #170e09  0%, #442a1b  50%, #9c6242 100%);
+        border-radius: 3px !important;
+        color: #ffcca2;
+        text-shadow: 2px 0px 1px #20170d;
+        font-weight: 700;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+
+    .card-body {
+        padding-bottom: 32px;
+        padding-left: 30px;
+        padding-right: 30px;
+        /* background-image: url(../images/card/classy-fabric.png); */
+    }
+
+
+    /* list element */
+    .list-items .item {
+        display: block;
+        background-size: cover;
+        font-size: 14px;
+        background-position: center;
+        background-color: #170e0a;
+        color: #d49673;
+        border: 1px solid #885539;
+        border-radius: 3px;
+        padding: 8px 0;
+    }
+
+    .list-items .item .img-box {
+        height: 50px;
+        width: 50px;
+        border: 1px solid #885539;
+        background-color: #2b1a12;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: flex-end;
+    }
+
+    .list-items .item .box-element b {
+        display: block;
+    }
+
+    .list-items .item .box-element span {
+        display: block;
+    }
+
+    /* table */
+    .table-trailer {
+        color: #e6a682;
+        background-color: #2b1a12;
+        background-image: url(../images/card/classy-fabric.png);
+    }
+
+    .table-trailer td,
+    .table-trailer th,
+    .table-trailer thead th {
+        border-color: #b97550;
+    }
+
+    .table-trailer.table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.43);
+    }
+
+    .table-trailer.table-hover tbody tr:hover {
+        color: #ec9362;
+        background-color: rgba(0, 0, 0, .075);
+    }
+
+    /* alert */
+    .alert-green-style {
+        color: #ffd4a2;
+        background-color: #170e0a;
+        border-color: #89553a;
+        background-image: url(../images/card/classy-fabric.png);
+    }
+
+    /* head */
+    .head-green-style {
+        color: #d49b7d;
+        background-color: #291812;
+        border-color: #895539;
+        background-image: url(../images/card/classy-fabric.png);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    /* tooltip */
+    .tooltip-inner {
+        font-size: 12px;
+        padding: 10px 15px 10px 20px;
+        color: #ffe3a2;
+        background-color: #283314;
+        background-image: url(../images/card/classy-fabric.png);
+        border: 1px solid #141b0c;
+        text-align: left;
+    }
+
+    .bs-tooltip-top .arrow::before,
+    .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+        border-top-color: #283314 !important;
+    }
+
+    /* */
+    .collapse .alert:before {
+        content: "";
+        background: url(../images/card/alert-top.png);
+        width: 75px;
+        height: 25px;
+        left: -20px;
+        bottom: -6.5px;
+        position: absolute;
+    }
+
+    .collapse .alert:after {
+        content: "";
+        background: url(../images/card/alert-bottom.png);
+        width: 75px;
+        height: 25px;
+        right: -20px;
+        bottom: -6.5px;
+        position: absolute;
+    }
+
+    /* */
+    #owl-npc .item {
+        background: #150e0b;
+        background-image: url(../images/card/classy-fabric.png)
+        padding:8px;
+        margin-left:2px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    .gameimage{
+        border: 5px solid #783300;
+        box-shadow: 0px 0px 20px rgb(120, 44, 6);
+    }
+
+    .nav-tabs .nav-item{
+        background: #895539;
+        border: 1px solid #150d0c;
+    }
+
+    .nav-tabs .nav-item a{
+        color: #e6a076;
+    }
+
+    .nav-tabs .nav-link:hover{
+        background: #231611;
+        border: 1px solid #895539;
+        color: #c17d57;
+        border-radius: 0px;
+    }
+
+    .nav-tabs .nav-link:focus{
+        background: #231611;
+        border: 1px solid #895539;
+        color: #c17d57;
+        border-radius: 0px;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        background: #231611;
+        border: 1px solid #895539;
+        color: #c17d57;
+        border-radius: 0px;
+    }
+	.yukari_don
+	{
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		bottom: 20px;
+		right: 20px;
+		font-size: 52px;
+		text-align: center;
+		color: white;
+	}

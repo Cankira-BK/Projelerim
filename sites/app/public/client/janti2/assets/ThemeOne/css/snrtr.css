@@ -1,0 +1,130 @@
+.events {
+	line-height: 1.2
+}
+
+.events li {
+	border-bottom: 1px dashed #de694a;
+	padding: 10px 0;
+	transition: .5s
+}
+
+.events li:last-child {
+	border-bottom: 0
+}
+
+.events li a {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 14px;
+	color: #de694a
+}
+
+.events li span {
+	color: #bfb5ae;
+	font-size: 13px
+}
+
+.events .renkli {
+	color: #de694a;
+}
+
+.form-template  {
+	box-shadow: 0 0 12px -1px #00b6ff;
+	width: 441px;
+	margin: 48px auto;
+	padding:10px;
+	background: #010112;
+}
+
+.fontSizeOnUc td{
+	font-size:13px!important;
+}
+
+.siralama{
+	text-align: center!important;
+}
+.siralama tr {
+	border-bottom: 1px solid #342134;
+}
+.kontrolPaneliBilgiSol {
+	-moz-box-shadow: 3px 1px 13px -4px #000;
+	-webkit-box-shadow: 3px 1px 13px -4px #000;
+	box-shadow: 3px 1px 13px -4px #de19c0;
+	color: #f35295;
+	height: 43px;
+}
+.kontrolPaneliBilgiSag {
+	-moz-box-shadow: 3px 1px 13px -4px #000;
+	-webkit-box-shadow: 3px 1px 13px -4px #000;
+	box-shadow: 3px 1px 13px -4px #d3a06c;
+	color: #ffffff;
+	padding-left: 14px;
+	width: 377px;
+}
+.kontrolPaneliGenislik{
+	width: 90%;
+	margin: 10px;
+}
+.text-center{
+	text-align: center!important;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination a,.pagination strong{
+	padding: 10px;
+	float: left;
+	border: 1px dashed;
+	font-size:14px;
+	font-family: 'Arial';
+	color:#d3a06c;
+	margin: 10px;
+}
+.text-ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+hr {
+  border: 0;
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8c8c;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+	margin-bottom: -10px;
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8c8c;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.youtubeVideos {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 7;
+}
+.youtubeVideos a {
+  display: block;
+}
+.youtubeVideos .wallpaper-big {
+	padding: 10px;
+  position: relative;
+  height: 149px;
+  width: 265px;
+  display: block;
+}
+.youtubeVideos .wallpaper-big img {
+	padding: 10px;
+  width: 265px;
+  height: 149px;
+  position: absolute;
+}

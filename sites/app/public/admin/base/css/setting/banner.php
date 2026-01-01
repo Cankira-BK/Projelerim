@@ -1,0 +1,2 @@
+<link href="<?=URI::public_path('admin/')?>assets/global/plugins/ladda/ladda-themeless.min.css" rel="stylesheet" type="text/css" />
+<link href="<?=URI::public_path('admin/')?>assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />

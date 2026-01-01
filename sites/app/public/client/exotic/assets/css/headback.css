@@ -1,0 +1,37 @@
+.headBack {
+    background-image: url('../images/headback.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+
+
+
+.headBack-dButton {
+    width: 267px;
+    height: 60px;
+    background-position: -539px -1px;
+}
+.headBack-dButton:hover {
+    width: 267px;
+    height: 60px;
+    background-position: -270px -1px;
+}
+.headBack-dButton:active {
+    width: 267px;
+    height: 60px;
+    background-position: -1px -1px;
+}
+
+.headBack-headBack {
+    width: 897px;
+    height: 150px;
+    background-position: -1px -63px;
+}
+
+.headBack-progressValue {
+    width: 574px;
+    height: 20px;
+    background-position: -1px -215px;
+}

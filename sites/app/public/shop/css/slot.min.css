@@ -1,0 +1,110 @@
+button:disabled,
+button[disabled]{
+    border: 1px solid #7e0c02;
+    background-color: #cccccc;
+    color: #666666;
+    background: url(../images/8568b91705c7d246e926bdbc9b04b7.png) 0 -238px transparent;
+    cursor: no-drop;
+}
+button[disabled]:hover {
+    border: 1px solid #7e0c02;
+    background-color: #cccccc;
+    color: #666666;
+    background: url(../images/8568b91705c7d246e926bdbc9b04b7.png) 0 -238px transparent;
+    cursor: no-drop;
+}
+
+.start-roulette{
+    margin-top: 20px;
+}
+
+.btn-slot{
+    text-transform: uppercase;
+    font-size: 1em;
+    min-width: 80px;
+    width: auto;
+}
+
+.slot-cash{
+    width: 10px!important;
+    height: 10px!important;
+}
+
+.slot-btn-text{
+    font-size: 12px;
+    text-transform: none;
+    font-family: normal;
+}
+
+.play-slot-cash{
+    background-color: rgb(203, 167, 112);
+    background-image: url(http://gf2.geo.gfsrv.net/cdn43/0077144b9df87e91fdc82159b5bbd3.jpg);
+    max-height: 93.5px;
+    width: 380px;
+    margin-top: 10px;
+    height: 20px;
+    margin-left: 9px;
+    padding: 10px;
+}
+
+.play-slot-cash p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #8f0f02;
+    text-align: center;
+}
+
+.roulette0
+{
+    display:none;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.roulette1
+{
+    display:none;
+    float: left;
+    margin-top: 15px;
+}
+
+.roulette2
+{
+    display:none;
+    float: left;
+    margin-top: 15px;
+}
+
+.btn-passive{
+    margin-top: 20px;
+    border: 1px solid #7e0c02;
+    background-color: #cccccc;
+    color: #666666;
+    background: url(../images/8568b91705c7d246e926bdbc9b04b7.png) 0 -238px transparent;
+    cursor: no-drop;
+}
+
+.btn-passive:hover{
+    margin-top: 20px;
+    border: 1px solid #7e0c02!important;
+    background-color: #cccccc;
+    color: #666666;
+    background: url(../images/8568b91705c7d246e926bdbc9b04b7.png) 0 -238px transparent;
+    cursor: no-drop;
+}
+
+.btn-close{
+    margin-top: 20px;
+    border: 1px solid #7e0c02;
+    background-color: #cccccc;
+    color: #666666;
+    background: url(../images/8568b91705c7d246e926bdbc9b04b7.png) 0 -238px transparent;
+}
+
+.slot-price{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 15px;
+}

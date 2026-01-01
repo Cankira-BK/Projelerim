@@ -1,0 +1,1 @@
+<link href="<?=URI::public_path('')?>global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" /><link href="<?=URI::public_path('')?>global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
