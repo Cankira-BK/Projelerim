@@ -1,0 +1,88 @@
+.wbuttons {
+    background-image: url(../images/wbuttons.png);
+    background-repeat: no-repeat;
+    display: block;
+    border:none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+.wbuttons-btCikis {
+    width: 92px;
+    height: 61px;
+    background-position: -95px -1px;
+}
+.wbuttons-btCikis:hover {
+    width: 92px;
+    height: 61px;
+    background-position: -1px -1px;
+}
+
+
+
+.wbuttons-btDevam {
+    width: 85px;
+    height: 37px;
+    background-position: -88px -64px;
+}
+.wbuttons-btDevam:hover {
+    width: 85px;
+    height: 37px;
+    background-position: -1px -64px;
+}
+
+
+
+.wbuttons-btHesabim {
+    width: 92px;
+    height: 61px;
+    background-position: -95px -147px;
+}
+.wbuttons-btHesabim:hover {
+    width: 92px;
+    height: 61px;
+    background-position: -1px -147px;
+}
+
+
+
+.wbuttons-bt {
+    width: 181px;
+    height: 42px;
+    background-position: -189px -1px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(21, 16, 13);
+    color: rgb(243, 221, 207);
+}
+.wbuttons-bt:hover {
+    width: 181px;
+    height: 42px;
+    background-position: -1px -210px;
+}
+.wbuttons-bt:active {
+    width: 181px;
+    height: 42px;
+    background-position: -1px -103px;
+}
+
+.wbuttons-buttonBorder {
+    width: 203px;
+    height: 64px;
+    background-position: -189px -45px;
+}
+ul.accoun_panel_menu { width:567px;  padding-left:20px; }
+ul.accoun_panel_menu li { float:left; width:280px; height:61px; text-align:left; position:relative; font-weight:bold; margin-top:1px; margin-left:2px;  }
+ul.accoun_panel_menu li a { width:280px; height:61px; display:inline-block; color:#8b7767; }
+ul.accoun_panel_menu li .name { position:absolute; left:35px; top:15px;  }
+ul.accoun_panel_menu li .desc  { position:absolute; left:18px; top:35px; font-size:8pt; color:#53483e; }
+ul.accoun_panel_menu li a:hover { color:#a99789!important; }
+
+.downloadbox { margin-top:10px; position:relative; }
+.downloadbox a { display:block; width:525px; height:150px; background-image:url(../images/downloadback.jpg); }
+.downloadbox a .title {font-size:20pt; line-height:90px; }
+.downloadbox a .counter { position:absolute; left:45px; width:70px; bottom:15px; color:#6C6140; }

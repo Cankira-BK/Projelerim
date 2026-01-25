@@ -1,0 +1,1 @@
+<?phpuse Controller\IN_Controller;    class Errors extends IN_Controller    {        public function __construct()        {            parent::__construct();        }        public function index()        {            $this->view->render('error/index',1);        }        public function permission(){            echo "Permission Error";        }    }

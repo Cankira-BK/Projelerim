@@ -1,0 +1,65 @@
+		.container_3 {
+		float:left;
+		width: auto;
+		height: auto;
+		min-height: 40px;
+		background-color: rgba(41, 33, 31, 0.49);
+		box-shadow: 0 0 4px rgba(0, 0, 0, .6), 0 1px 1px rgba(0, 0, 0, .5), inset 0 0 0 1px rgba(255, 255, 255, .015), inset 0 1px 0 rgba(255, 255, 255, .05);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		}
+		.w-addon-row {
+		margin: 0
+		}
+		.w-addon-row img {
+		border-radius: 4px;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+		float: left;
+		width: 268px
+		}
+		.addon-info {
+		width: 300px;
+		float: left;
+		margin: 0 0 0 30px;
+		text-shadow: 0 0 14px rgba(0, 0, 0, .4), 2px 3px 0 rgba(0, 0, 0, .4)
+		}
+		.addon-info h1 {
+		    font-family: Tahoma, Helvetica, sans-serif;
+		margin: 0 0 18px 0;
+		color: #afa288;
+		font-size: 21px;
+		
+		}
+		.addon-info p {
+		font-size: 13px;
+		height: 68px;
+		text-shadow: 0 0 14px rgba(0, 0, 0, .4), 1px 1px 0 rgba(0, 0, 0, .4);
+		color: #867f72
+		}
+		.addon-info .war-links {
+		margin: 13px 0 0 0
+		}
+		.addon-info .war-links a.download {
+		display: inline-block;
+		padding: 7px 15px;
+		border-radius: 3px;
+		background: #355c35;
+		box-shadow: inset 0 0 0 1px rgba(0, 255, 0, .05), inset 0 1px 0 rgba(0, 255, 0, .1), 0 0 6px rgba(0, 0, 0, .4);
+		color: #1f1f17;
+		text-shadow: 1px 1px 0 rgba(0, 255, 0, .1);
+		font-weight: bold;
+		text-transform: uppercase
+		}
+		.addon-info .war-links a.download:hover {
+		color: #e0bb28;
+		text-shadow: 0 0 4px rgba(0, 0, 0, .5), 0 1px 1px rgba(0, 0, 0, .5);
+		background: #2c4e2c
+		}
+		.archived-news {
+		width: 600px;
+		margin-top:25px;
+		margin-left:25px;
+		padding: 30px 35px 30px 35px;
+		}

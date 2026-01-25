@@ -1,0 +1,19 @@
+.progresss {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: #fff;
+    z-index: 10000;
+}
+
+.progresss > svg {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}

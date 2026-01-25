@@ -1,0 +1,109 @@
+/* LOGIN Box 
+---------------------------------------------------------*/
+#login-box-container {
+	width: 100% !important;
+	height: 100% !important;
+	top: 0;
+	left: 0;
+	display: none;
+	padding: 0;
+	margin: 0;
+	z-index: 999999;
+	position: fixed;
+	background: rgba(0, 0, 0, .8);
+	border-radius: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#login-box-container .login-box-holder {
+	width: 581px;
+	height: 487px;
+	top: 30%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	background-position: -84px -290px;
+}
+
+#login-box-container .login-box-holder .login-box {
+	padding: 100px 80px;
+	font-size: 13px;
+}
+
+.login-box .warfg_input {
+	background: url(../images/misc/input-bg-sprite.png) 40px -51px repeat-x;
+}
+
+.login-box .warfg_input:before {
+	top: 4px;
+	left: -5px;
+}
+
+.login-box .warfg_input:after {
+	top: -1px;
+	right: -5px;
+}
+
+.login-box input[type='text'], .login-box input[type='password'] {
+	width: 95%;
+	margin: 0 0 30px 0 !important;
+}
+
+.remember-me-row {
+	text-align: center;
+}
+
+.remember-me-row label {
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.remember-me-row span {
+	color: #433836;
+}
+
+.login-box-row {
+	margin: 20px 0 0 0;
+}
+
+.login-box-row .warfg_btn {
+	margin: 5px 0 0 0;
+}
+
+.login-box-row input[type='submit'] {
+	padding: 0 40px;
+}
+
+.login-box-options {
+	color: #433836;
+	top: 29px;
+	margin: 0 0 0 30px;
+	display: inline-block;
+	position: relative;
+	line-height: 200%;
+	text-shadow: 0 0 3px #000;
+}
+
+.login-box-options span a {
+	color: #ad7e25;
+}
+
+.login-box-options span a:hover {
+	color: #d29c36;
+}
+
+#login-box-container .close_btn {
+	width: 35px;
+	height: 35px;
+	left: 47%;
+	bottom: 5px;
+	display: block;
+	position: absolute;
+	background-position: -357px -805px;
+}
+
+#login-box-container .close_btn:hover {
+	background-position: -357px -855px;
+}

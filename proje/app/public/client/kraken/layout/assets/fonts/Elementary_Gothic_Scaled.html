@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from vsmt2.org/app/public/client/default/layout/assets/fonts/Elementary_Gothic_Scaled.ttf by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Apr 2018 18:44:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <!-- Meta start -->
+    <meta charset="UTF-8">
+    <meta name="robots" content="follow, index"/>
+    <meta http-equiv="Content-Language" content="pl"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base >
+    <title>VSMT2 - Türkiyenin Düello Sunucusu</title>
+    <!-- /meta start -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../../../../../../favicon.ico" sizes="16x16" />
+    <!-- /favicon -->
+
+    <!-- Meta -->
+    <meta name="keywords" content="metin2, VSMT2, emek, medium, metin, pvp server metin2"/>
+    <meta name="description" content="VSMT2 pvp server Metin2 emek/zor."/>
+    <!-- /meta -->
+
+    <!-- OpenGraph tags (espec. Facebook) -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="../../../../../../../index-2.html"/>
+    <meta property="og:title" content="VSMT2 - Metin2 PVP Server"/>
+    <meta property="og:description" content="VSMT2-Metin2 PVP Server. Uzun süre boyunca, hoş dengeli ve ilginç oyun sunuyoruz!"/>
+    <meta property="og:image" content="../../../../../../../data/upload/0rT7Cp3w0k2Y9Mz.png"/>
+    <!-- /openGraph tags -->
+
+    <!-- Core stylesheet -->
+    <link rel="stylesheet" href="../../../admin/assets/style/css/icons/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/framework.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link href="../css/fancybox.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900">
+    <!-- /core stylesheet -->
+
+    <!-- JS -->
+    <script src="../js/jquery/jquery.min.js"></script>
+    <script src="../js/jquery/jquery-ui.min.js"></script>
+    <script src="../js/responsive.min.js"></script>
+    <script src="../js/framework.min.js"></script>
+    <script src="../js/notify.js"></script>
+    <script type="text/javascript" src="../js/fancybox.js"></script>
+    <!-- /js -->
+
+    <!-- Plugins JS -->
+    <script src="../plugins/niceSelect/js/jquery.nice-select.min.js"></script>
+    <script src="../plugins/pace/js/pace.min.js"></script>
+    <!-- /plugins JS -->
+
+    <!-- Plugin stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../plugins/pace/css/pace-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/niceSelect/css/nice-select.min.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/froala/css/froala_style.min.css">
+    <!-- /plugin stylesheet -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var screenSize = $(window).height();
+            var compareW = 767;
+            if (screenSize > 0 && screenSize < compareW) {
+                var fancy_a = 740;
+                var fancy_b = 550;
+                var fancy_c = "ishopbg-small";
+                var fancy_d = "13px";
+                var fancy_e = "3px";
+                var fancy_f = "13px";
+                var fancy_g = 754;
+                var fancy_h = 574;
+                var fancy_i = 6;
+                var fancy_j = 20;
+            }
+            else
+            {
+                var fancy_a = 1016;
+                var fancy_b = 655;
+                var fancy_c = "ishopbg";
+                var fancy_d = "16px";
+                var fancy_e = "7px";
+                var fancy_f = "16px";
+                var fancy_g = 1032;
+                var fancy_h = 690;
+                var fancy_i = 8;
+                var fancy_j = 28;
+            }
+            var fancybox_css = {
+                'outer': {'background': null},
+                'close': {'background_image': null, 'height': null, 'right': null, 'top': null, 'width': null}
+            };
+            $('a.itemshop').fancybox({
+                'autoDimensions': false,
+                'width': fancy_a,
+                'height': fancy_b,
+                'padding': 0,
+                'scrolling': 'yes',
+                'overlayColor': '#000',
+                'overlayOpacity': 0.8,
+                'onStart': function () {
+                    fancybox_css.outer.background = $('#fancybox-outer').css('background');
+                    fancybox_css.close.background_image = $('#fancybox-close').css('background-image');
+                    fancybox_css.close.height = $('#fancybox-close').css('height');
+                    fancybox_css.close.right = $('#fancybox-close').css('right');
+                    fancybox_css.close.top = $('#fancybox-close').css('top');
+                    fancybox_css.close.width = $('#fancybox-close').css('width');
+                    $('#fancybox-outer').css({'background': 'transparent url("https://vsmt2.org/app/public/client/default/static/images/'+fancy_c+'.png") center center no-repeat'});
+                    $('#fancybox-close').css({
+                        'background-image': 'none',
+                        'cursor': 'pointer',
+                        'height': fancy_d,
+                        'right': '3px',
+                        'top': fancy_e,
+                        'width': fancy_f
+                    });
+                },
+                'onComplete': function () {
+                    $('#fancybox-inner').css({'top': fancy_j, 'left': fancy_i});
+                    $('#fancybox-wrap').css({'width': fancy_g, 'height': fancy_h});
+                },
+                'onClosed': function () {
+                    if (null != fancybox_css.outer.background) {
+                        $('#fancybox-outer').css('background', fancybox_css.outer.background);
+                    }
+                    if (null != fancybox_css.close.background_image) {
+                        $('#fancybox-close').css('background-image', fancybox_css.close.background_image);
+                    }
+                    if (null != fancybox_css.close.height) {
+                        $('#fancybox-close').css('height', fancybox_css.close.height);
+                    }
+                    if (null != fancybox_css.close.right) {
+                        $('#fancybox-close').css('right', fancybox_css.close.right);
+                    }
+                    if (null != fancybox_css.close.top) {
+                        $('#fancybox-close').css('top', fancybox_css.close.top);
+                    }
+                    if (null != fancybox_css.close.width) {
+                        $('#fancybox-close').css('width', fancybox_css.close.width);
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- Header -->
+<div id="header">
+    <a href="#">
+        <div class="logo" style="background: url(../../../../../../../data/upload/0rT7Cp3w0k2Y9Mz.png) center no-repeat;"></div>
+    </a>
+    <div class="container">
+        <a href="#">
+            <div class="server">
+                <div>
+                    <img src="../images/button_page.png" alt="" />
+                </div>
+            </div>
+        </a>
+        <a href="../../../../../../../download.html">
+            <div class="server" style="float: right;margin-top: -102px;background: none;margin-right: 120px;">
+                <button type="submit" class="btn-login animated infinite pulse" name="login-submit"><span>Oyunu indir</span>
+                </button>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- /header -->
+
+<!-- Content -->
+<div id="content">
+
+    <!-- Play -->
+    <div id="nowButton" class="btn-begin">
+        <div id="nowButton2" class="bg"></div>
+        <a id="nowButton3" href="../../../../../../../register.html">
+            <img src="../images/now.png" alt="" />
+        </a>
+        <div class="bg-hover"></div>
+    </div>
+    <!-- /play -->
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+        <div id="mobile-panel-player" class="mobile-menu-item"><a href="../../../../../../../login.html"><h2>Giriş Yap</h2></a></div>
+        <div id="mobile-panel-player" class="mobile-menu-item"><a href="../../../../../../../register.html"><h2>Kayıt Ol</h2></a></div>
+    </div>
+    <!-- /mobile menu -->
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Left sidebar -->
+        <div class="sidebar sidebar-left">
+            <div id="panel-menu" class="panel">
+                <div class="panel-header">
+                    <h2>MENU</h2><span class="close-panel">&larr;</span>
+                </div>
+                <div class="panel-content">
+                    <div class="panel-inner">
+                        <ul class="menu">
+                                                                                                                <div id="l2_statistics_title">Sunucu İstatistikleri</div>
+                            <div id="l2_statistic_box">
+                                                                <div>
+                                    <div class="l2_statistic_key_title">3422</div>
+                                    <div class="l2_statistic_key_value">Toplam Online</div>
+                                </div>
+																                                <div>
+                                    <div class="l2_statistic_key_title">10229</div>
+                                    <div class="l2_statistic_key_value">Bugün Girenler</div>
+                                </div>
+																                                <div>
+                                    <div class="l2_statistic_key_title">23369</div>
+                                    <div class="l2_statistic_key_value">Toplam Hesap</div>
+                                </div>
+																                                <div>
+                                    <div class="l2_statistic_key_title">39413</div>
+                                    <div class="l2_statistic_key_value">Toplam Karakter</div>
+                                </div>
+																                           </div>
+															                                                                                                                        <li><a href="../../../../../../../index.html">Anasayfa<br /></a></li>
+                            <li><a href="../../../../../../../download.html">Oyunu İndir<br /></a></li>
+                                                            <li><a href="../../../../../../../register.html">Kayıt Ol<br /></a></li>
+                                                        <li><a href="../../../../../../../ranked/player.html">Sıralama<br /></a></li>
+                            <li><a class="itemshop itemshop-btn iframe" href="../../../../../../../ishop.html">Market<br /></a></li>
+                            <li><a class="itemshop itemshop-btn iframe" href="../../../../../../../destek.html">Destek<br /></a></li>
+                            <li><a href="#" target="_blank">Forum<br /></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rank -->
+            <div id="panel-rank" class="panel">
+                <div class="panel-header"><h2>Etkinlik Takvimi</h2><span class="close-panel">&rarr;</span></div>
+                <div class="panel-content">
+                    <div class="panel-inner">
+                        <iframe src="../../../../../../../event.html" style="border: none;width: 210px;height: 300px;" id="fancybox-frame"></iframe>
+                    </div>
+                    <script>
+                        $("#fancybox-frame").load(function(){
+                            $(this).contents().find("#container").css("margin-left", "-60px");
+                        });
+                    </script>
+                </div>
+                <!-- /rank -->
+            </div>
+        </div>
+        <!-- /left sidebar -->
+
+        <!-- Right sidebar -->
+        <div class="sidebar sidebar-right">
+                                            <div id="panel-login" class="panel panel-login">
+                    <div class="panel-header"><h2>Giriş Yap</h2><span class="close-panel">&rarr;</span></div>
+                    <div class="panel-content">
+                        <div class="panel-inner">
+                            <form method="POST" action="https://vsmt2.org/login/control" id="loginForm">
+                                <label for="login">Kullanıcı Adı</label>
+                                <div class="input input-rich">
+                                    <input type="text" name="login" id="login" placeholder="Kullanıcı Adı" />
+                                </div>
+
+                                <label for="password">Şifre</label>
+                                <div class="input input-rich">
+                                    <input type="password" name="password" id="password" placeholder="Şifre" />
+                                </div>
+
+                                <label for="pin">Kontrol</label>
+                                <script src='../../../../../../../../www.google.com/recaptcha/api.js'></script>
+                                <div class="g-recaptcha rc-anchor-dark" style="transform:scale(0.68);margin-left: 3px;" data-sitekey="6LdJ9EwUAAAAAHNmslkUbhDiBILLlqb1wqkjqRt0"></div>
+                                <button type="submit" class="btn-login" name="login-submit"><span>Giriş Yap</span></button>
+                            </form>
+                        </div>
+                        <center><a href="../../../../../../../recuperare.html"><h4><i class="icon-lock position-left"></i> Şifremi Unuttum</h4></a></center><br>
+                        <center><a href="../../../../../../../recuperare/account.html"><h4><i class="icon-user position-left"></i>Hesap Adımı Unuttum</h4></a></center>
+                    </div>
+                </div>
+                            
+			                        <!-- Rank -->
+            <div id="panel-rank" class="panel">
+                <div class="panel-header panel-header-rank"><h2>Top 5 Oyuncu</h2><span class="close-panel">&rarr;</span></div>
+                <div class="panel-content">
+                    <div class="panel-inner">
+                                                <table class="rank-table">
+                            <tbody>
+                                                        <tr>
+                                <td><img src="../images/1.png" alt="1" /></td>
+                                <td><a href="../../../../../../../detail/player/MARQUETTE.html">MARQUETTE</a></td>
+                                <td>105</td>
+                            </tr>
+                                                        <tr>
+                                <td><img src="../images/2.png" alt="2" /></td>
+                                <td><a href="../../../../../../../detail/player/ZUBER.html">ZUBER</a></td>
+                                <td>105</td>
+                            </tr>
+                                                        <tr>
+                                <td><img src="../images/3.png" alt="3" /></td>
+                                <td><a href="../../../../../../../detail/player/UZAYLIGEMI.html">UZAYLIGEMI</a></td>
+                                <td>105</td>
+                            </tr>
+                                                        <tr>
+                                <td><img src="../images/4.png" alt="4" /></td>
+                                <td><a href="../../../../../../../detail/player/Eren.html">Eren</a></td>
+                                <td>105</td>
+                            </tr>
+                                                        <tr>
+                                <td><img src="../images/5.png" alt="5" /></td>
+                                <td><a href="../../../../../../../detail/player/KRALBENIM.html">KRALBENIM</a></td>
+                                <td>105</td>
+                            </tr>
+                                                        </tbody>
+                        </table>
+                                            </div>
+                                        <a class="btn" href="../../../../../../../ranked/player.html">Tümünü Gör</a>
+                                    </div>
+                <!-- /rank -->
+            </div>
+            <div id="panel-rank" class="panel">
+                <div class="panel-header panel-header-rank"><h2>Top 5 Lonca</h2><span class="close-panel">&rarr;</span></div>
+                <div class="panel-content">
+                    <div class="panel-inner">
+                                                    <table class="rank-table">
+                                <tbody>
+                                                                    <tr>
+                                        <td><img src="../images/1.png" alt="1" /></td>
+                                        <td><a href="../../../../../../../detail/guild/ZUBER.html">ZUBER</a></td>
+                                        <td>71775</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><img src="../images/2.png" alt="2" /></td>
+                                        <td><a href="../../../../../../../detail/guild/%5bKRAL%5dCHIEFS.html">[KRAL]CHIEFS</a></td>
+                                        <td>60397</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><img src="../images/3.png" alt="3" /></td>
+                                        <td><a href="../../../../../../../detail/guild/jMAHKUM.html">jMAHKUM</a></td>
+                                        <td>56475</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><img src="../images/4.png" alt="4" /></td>
+                                        <td><a href="../../../../../../../detail/guild/NADAS.html">NADAS</a></td>
+                                        <td>54969</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td><img src="../images/5.png" alt="5" /></td>
+                                        <td><a href="../../../../../../../detail/guild/MYLIFE.html">MYLIFE</a></td>
+                                        <td>53468</td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                                            </div>
+                                            <a class="btn" href="../../../../../../../ranked/guild.html">Tümünü Gör</a>
+                                    </div>
+                <!-- /rank -->
+            </div>
+                                        
+        </div>
+        <!-- /right sidebar -->
+        <!-- Main -->
+        <div class="main"><!-- NEWS -->
+<div class="main-panel panel-download">
+    <div class="main-header">
+        404 NOT FOUND
+    </div>
+    <div class="main-content">
+        <div class="main-inner main-inner-news">
+            <div class="content-title"></div>
+            <div class="main-text-bg">
+                <div class="main-text">
+                    <div class="bg-light">
+                        <div class="fr-view">
+                            <p style="text-align: center;"><img src="../images/errorlogosupreme.png" style="width: 300px;" class="fr-fic fr-dib"></p><p style="text-align: center;"><span style="font-size: 25px; font-family: Tahoma, Geneva, sans-serif;">Aradığınız Sayfa Bulunamadı!</span></p>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-bottom"></div>
+    </div>
+    <!-- /main content -->
+</div>
+<!-- \news --></div>
+<!-- /main -->
+</div>
+<!-- /container -->
+</div>
+<!-- /content -->
+<div id="footer">
+    <div class="container">
+        <a class="social-fb" href="https://www.facebook.com/vsmt2" target="_blank"></a>
+        <div class="footer-content">
+            <div id="footer-links">
+                <div class="footer-link"><a href="../../../../../../../index.html">Anasayfa</a></div>
+                <div class="footer-link"><a class="itemshop itemshop-btn iframe" href="../../../../../../../destek.html">Destek</a></div>
+                <div class="footer-link"><a href="../../../../../../../download.html">Oyunu İndİr</a></div>
+                <div class="footer-link"><a href="../../../../../../../register.html">Kayıt Ol</a></div>
+                <div class="footer-link"><a href="#">Forum</a></div>
+                <div class="footer-link"><a href="../../../../../../../privacy.html">Kullanıcı Sözleşmesi</a></div>
+            </div>
+            Copyright &copy; by <a href="https://www.metin2panel.com/">Metin2 Panel</a> - 2018<br />
+            Tüm hakları saklıdır ve <a href="../../../../../../../index.html">VSMT2</a> mülkiyetindedir.
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from vsmt2.org/app/public/client/default/layout/assets/fonts/Elementary_Gothic_Scaled.ttf by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Apr 2018 18:44:46 GMT -->
+</html>

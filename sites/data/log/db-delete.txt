@@ -1,8 +1,0 @@
-{"Tarih":"2025-06-28 12:43:33","Sorgu":"DELETE FROM patch WHERE `id`=:id LIMIT 1","Veriler":"1","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/NewsModel.php","Sat\u0131r":38};
-{"Tarih":"2025-06-28 12:43:34","Sorgu":"DELETE FROM patch WHERE `id`=:id LIMIT 1","Veriler":"2","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/NewsModel.php","Sat\u0131r":38};
-{"Tarih":"2025-06-28 21:37:28","Sorgu":"DELETE FROM kuponlar WHERE `id`=:id LIMIT 1","Veriler":"779465214","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/CouponModel.php","Sat\u0131r":42};
-{"Tarih":"2025-07-02 02:42:21","Sorgu":"DELETE FROM items WHERE `item_id`=:item_id LIMIT 1","Veriler":"327460163","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/ProductModel.php","Sat\u0131r":277};
-{"Tarih":"2025-07-08 23:44:30","Sorgu":"DELETE FROM items WHERE `item_id`=:item_id LIMIT 1","Veriler":"183828431","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/ProductModel.php","Sat\u0131r":277};
-{"Tarih":"2025-07-14 20:30:01","Sorgu":"DELETE FROM items WHERE `item_id`=:item_id LIMIT 1","Veriler":"864868576","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/ProductModel.php","Sat\u0131r":277};
-{"Tarih":"2025-07-14 20:30:03","Sorgu":"DELETE FROM items WHERE `item_id`=:item_id LIMIT 1","Veriler":"593825700","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/ProductModel.php","Sat\u0131r":277};
-{"Tarih":"2025-07-28 23:26:15","Sorgu":"DELETE FROM pack WHERE `id`=:id LIMIT 1","Veriler":"1","Dosya":"\/home\/nuyacom\/public_html\/app\/models\/admin\/PackModel.php","Sat\u0131r":33};

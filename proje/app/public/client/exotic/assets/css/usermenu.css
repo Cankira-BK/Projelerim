@@ -1,0 +1,17 @@
+.userMenu {
+    background-image: url(../images/usermenu.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.userMenu-sliderback {
+    width: 837px;
+    height: 191px;
+    background-position: -1px -1px;
+}
+
+.userMenu-userPanel {
+    width: 1229px;
+    height: 414px;
+    background-position: -1px -194px;
+}
