@@ -1,0 +1,5 @@
+"nesnemarketyeterliepyok";
+"Yeterli Epin Yok !";
+
+"nesnemarketbasarili";
+"Başarıyla eşyayı satın aldınız.";
