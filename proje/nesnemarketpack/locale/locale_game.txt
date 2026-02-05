@@ -1,0 +1,3 @@
+ASK_BUY_ITEM_TEXT	Satýn alma iþlemine devam etmek istiyor musun ? (Eþya: %s)
+DO_YOU_BUY_ITEM_C	Adet: %d Fiyat(EP): %s
+DO_YOU_BUY_ITEM_M	Adet: %d Fiyat(EM): %s
