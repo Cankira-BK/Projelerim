@@ -1,0 +1,10 @@
+[12-Feb-2026 13:15:40 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/etc.php on line 37
+[12-Feb-2026 13:15:40 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/home.php on line 14
+[12-Feb-2026 13:15:51 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/etc.php on line 37
+[12-Feb-2026 13:15:55 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/etc.php on line 37
+[12-Feb-2026 13:16:04 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/etc.php on line 37
+[12-Feb-2026 13:16:04 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/home.php on line 14
+[12-Feb-2026 13:16:11 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/etc.php on line 37
+[12-Feb-2026 13:16:11 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/home.php on line 14
+[12-Feb-2026 17:38:21 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/etc.php on line 37
+[12-Feb-2026 17:38:21 Europe/Istanbul] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home/nuyacom/public_html/metin2/itemshop/pages/home.php on line 14
