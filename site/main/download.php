@@ -1,12 +1,31 @@
+<?php
+$adminPath = __DIR__ . '/../admin';
+require_once $adminPath . '/config.php';
+require_once $adminPath . '/includes/store.php';
+
+$mirrorUrls = array_filter([
+    setting_get('client_download_url'),
+    setting_get('client_download_url_2'),
+    setting_get('client_download_url_3'),
+    setting_get('client_download_url_4'),
+]);
+
+function safe_url(string $url): string {
+    return htmlspecialchars($url, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
+?>
 <div id="download">
 	<div class="content content-last">
 		<div class="content-bg">
 			<div class="content-bg-bottom">
 				<h2>NUYA2 - İndir</h2>
 				<div class="download-inner-content">
-					<h3>NUYA2’yi şimdi ücretsiz indir!</h3>
-					<a href="http://dlcl.gfsrv.net/metin2/clients/hu/Downloader_Metin2_hu.exe" class="download-button-1" onClick="javascript:pageTracker._trackPageview('/downloads/client');"> </a>
-					<a href="http://tracker.gfsrv.net/Metin2_HU_20100527.exe.torrent" class="download-button-2" onClick="javascript:pageTracker._trackPageview('/downloads/torrent');"> </a>
+					<h3>NUYA2'yi şimdi ücretsiz indir!</h3>
+
+					<?php foreach ($mirrorUrls as $url): ?>
+					<a href="<?= safe_url($url) ?>" target="_blank" class="download-button-1" onClick="javascript:pageTracker._trackPageview('/downloads/client');"> </a>
+					<?php endforeach; ?>
+
 					<br class="clearfloat" />
 					<a href="javascript:void(0)" id="requirements">» Sistem Gereksinimleri</a>
 					<div id="required">

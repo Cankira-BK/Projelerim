@@ -4,7 +4,7 @@
 	require("user/config.php");
 ?>
 <!DOCTYPE html>
-<html lang="hu" >
+<html lang="tr" >
 	<head>
 		<?php include("./head.php"); ?>
 	</head>
